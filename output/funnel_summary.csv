@@ -1,0 +1,29 @@
+section,group,device_type,metric,denominator,numerator,conversion_rate
+funnel_stage,control,all,Reached site_visit,8914,8914,1.000000
+stage_conversion,control,all,site_visit to product_view,8914,5330,0.597936
+funnel_stage,control,all,Reached product_view,8914,5330,0.597936
+stage_conversion,control,all,product_view to add_to_cart,5330,2913,0.546529
+funnel_stage,control,all,Reached add_to_cart,8914,2913,0.326789
+stage_conversion,control,all,add_to_cart to checkout_start,2913,1533,0.526262
+funnel_stage,control,all,Reached checkout_start,8914,1533,0.171977
+stage_conversion,control,all,checkout_start to purchase,1533,989,0.645140
+funnel_stage,control,all,Reached purchase,8914,989,0.110949
+primary_metric,control,all,checkout_start to purchase,1533,989,0.645140
+overall_funnel,control,all,site_visit to purchase,8914,989,0.110949
+device_primary_metric,control,mobile,checkout_start to purchase,905,582,0.643094
+device_primary_metric,control,desktop,checkout_start to purchase,534,346,0.647940
+device_primary_metric,control,tablet,checkout_start to purchase,94,61,0.648936
+funnel_stage,treatment,all,Reached site_visit,9086,9086,1.000000
+stage_conversion,treatment,all,site_visit to product_view,9086,5356,0.589478
+funnel_stage,treatment,all,Reached product_view,9086,5356,0.589478
+stage_conversion,treatment,all,product_view to add_to_cart,5356,2885,0.538648
+funnel_stage,treatment,all,Reached add_to_cart,9086,2885,0.317521
+stage_conversion,treatment,all,add_to_cart to checkout_start,2885,1508,0.522704
+funnel_stage,treatment,all,Reached checkout_start,9086,1508,0.165970
+stage_conversion,treatment,all,checkout_start to purchase,1508,1020,0.676393
+funnel_stage,treatment,all,Reached purchase,9086,1020,0.112261
+primary_metric,treatment,all,checkout_start to purchase,1508,1020,0.676393
+overall_funnel,treatment,all,site_visit to purchase,9086,1020,0.112261
+device_primary_metric,treatment,mobile,checkout_start to purchase,902,601,0.666297
+device_primary_metric,treatment,desktop,checkout_start to purchase,533,372,0.697936
+device_primary_metric,treatment,tablet,checkout_start to purchase,73,47,0.643836

@@ -1,0 +1,41 @@
+{
+  "project_context": "Simulated A/B test project; not results from a real company.",
+  "primary_metric": "checkout_start_to_purchase_conversion_rate",
+  "alpha": 0.05,
+  "test": "Two-sided two-proportion z-test",
+  "statistics_backend": "statsmodels",
+  "control": {
+    "checkout_starts": 1533,
+    "purchases": 989,
+    "conversion_rate": 0.6451402478799739
+  },
+  "treatment": {
+    "checkout_starts": 1508,
+    "purchases": 1020,
+    "conversion_rate": 0.6763925729442971
+  },
+  "absolute_lift_proportion": 0.03125232506432318,
+  "absolute_lift_percentage_points": 3.1252325064323183,
+  "relative_lift_proportion": 0.04844268384591247,
+  "relative_lift_percent": 4.844268384591247,
+  "z_statistic": 1.8198369308150224,
+  "p_value": 0.06878384182027923,
+  "confidence_interval_95_difference_proportion": {
+    "lower": -0.002381884177265897,
+    "upper": 0.06488653430591226
+  },
+  "confidence_interval_95_difference_percentage_points": {
+    "lower": -0.23818841772658972,
+    "upper": 6.488653430591226
+  },
+  "verdict": "not statistically significant",
+  "shipping_interpretation": "Do not ship based on this experiment alone; collect more evidence or investigate.",
+  "power_check": {
+    "post_hoc_power_for_observed_effect": 0.44460014088606364,
+    "target_power": 0.8,
+    "minimum_detectable_effect_proportion_at_target_power": 0.04778554664707357,
+    "minimum_detectable_effect_percentage_points_at_target_power": 4.778554664707357,
+    "minimum_detectable_effect_cohens_h": 0.10161077380652697,
+    "assessment": "The observed lift is below the 80%-power MDE, so the final-step sample may be underpowered."
+  }
+}
